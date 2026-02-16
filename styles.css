@@ -1,3 +1,6 @@
+/* FULL PAGE ELEMENTS */
+
+
 /* Reformatting the whole page from 0 and using border box property for sizing */
 * {
     /* border: 1px solid red; */
@@ -6,20 +9,33 @@
     box-sizing: border-box;
 }
 
+ body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ 
+/*  TYPE ELEMENTS */
+
+
 /* Targets every link element in website */
 ul li a {
     text-decoration: none; /*Removes link underlining*/
     color: white;
 }
 
-/* Targets list elements */
+/* Targets all unordered list elements */
 ul {
     list-style-type: none; /* removes bullet points from list elements*/
 }
-
+/* Targets all ordered list elements */
 ol {
-    list-style-position: inside;
+    list-style-position: inside; /*puts the list numbers inside div*/
 }
+
+
+
+/* TITLE */
+
 
 /*Targets every link in title div*/
 .title a {
@@ -36,6 +52,11 @@ ol {
     /* margin-bottom: 20px; */
 }
 
+
+/* CARD SELECTORS */
+
+
+/* Targets main card div */
 .card {
     text-align: center;
     /* width: 800px; */
@@ -55,22 +76,27 @@ ol {
     margin-bottom: 30px;
 }
 
-/*Targets items inside recipe list*/
-.recipe-list li {
+/*Targets items inside index recipe list*/
+.index-list li {
     padding: 40px 0px;
     margin:5px;
     background-color: rgb(151, 197, 209);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
+/* RECIPE SELECTORS */
+
+
 /* Ingredients div */
 .ingredients, .steps{
     background-color: rgb(151, 197, 209);
-    display: inline-block;
-    width: 49%;
+    display: inline-block; /*puts elements next to eachother*/
+    width: 49%; /*sizes each half to 49%*/
     height: 400px; 
-    vertical-align: top;
+    vertical-align: top; /*aligns both elements to top*/
     text-align: left;
+    padding: 10px
 
 }
 
