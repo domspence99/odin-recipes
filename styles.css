@@ -13,7 +13,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
  }
 
- 
+
 /*  TYPE ELEMENTS */
 
 
@@ -88,15 +88,17 @@ ol {
 /* RECIPE SELECTORS */
 
 
+.recipe-container{
+    display: inline-flex;
+}
+
 /* Ingredients div */
 .ingredients, .steps{
     background-color: rgb(151, 197, 209);
-    display: inline-block; /*puts elements next to eachother*/
-    width: 49%; /*sizes each half to 49%*/
-    height: 400px; 
-    vertical-align: top; /*aligns both elements to top*/
+    width: 50%; /*sizes each element to 50%*/
     text-align: left;
-    padding: 10px
+    padding: 10px;
+    margin: 10px;
 
 }
 
